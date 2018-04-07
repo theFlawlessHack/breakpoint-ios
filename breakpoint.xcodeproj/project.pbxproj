@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		300905440ABC482C1989CF22 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97688B84050C9541118C2CEA /* Pods_breakpoint.framework */; };
+		AC162492207933BF0051DBB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162491207933BF0051DBB3 /* Constants.swift */; };
 		ACA8E70A20792E570067BC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E70920792E570067BC7C /* AppDelegate.swift */; };
 		ACA8E70C20792E570067BC7C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E70B20792E570067BC7C /* FirstViewController.swift */; };
 		ACA8E70E20792E570067BC7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E70D20792E570067BC7C /* SecondViewController.swift */; };
@@ -15,10 +16,12 @@
 		ACA8E71320792E590067BC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA8E71220792E590067BC7C /* Assets.xcassets */; };
 		ACA8E71620792E590067BC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8E71420792E590067BC7C /* LaunchScreen.storyboard */; };
 		ACA8E724207930200067BC7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA8E723207930200067BC7C /* GoogleService-Info.plist */; };
+		ACA8E7282079330D0067BC7C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E7272079330D0067BC7C /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97688B84050C9541118C2CEA /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC162491207933BF0051DBB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACA8E70620792E570067BC7C /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8E70920792E570067BC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA8E70B20792E570067BC7C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		ACA8E71520792E590067BC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA8E71720792E590067BC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA8E723207930200067BC7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACA8E7272079330D0067BC7C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DF78FAE487FF229E628F1C38 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 		E3EA9EE08A90182B5B9A55E0 /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC1624902079339B0051DBB3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC162491207933BF0051DBB3 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		ACA8E6FD20792E570067BC7C = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 		ACA8E70820792E570067BC7C /* breakpoint */ = {
 			isa = PBXGroup;
 			children = (
+				AC1624902079339B0051DBB3 /* Utilities */,
 				ACA8E72220792F270067BC7C /* Services */,
 				ACA8E72120792F070067BC7C /* Extensions */,
 				ACA8E72020792EEE0067BC7C /* Resources */,
@@ -138,6 +151,7 @@
 		ACA8E72220792F270067BC7C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ACA8E7272079330D0067BC7C /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -277,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC162492207933BF0051DBB3 /* Constants.swift in Sources */,
 				ACA8E70E20792E570067BC7C /* SecondViewController.swift in Sources */,
 				ACA8E70A20792E570067BC7C /* AppDelegate.swift in Sources */,
 				ACA8E70C20792E570067BC7C /* FirstViewController.swift in Sources */,
+				ACA8E7282079330D0067BC7C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +443,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G87HUM96UL;
 				INFOPLIST_FILE = breakpoint/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theflawlesshack.breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -443,7 +462,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G87HUM96UL;
 				INFOPLIST_FILE = breakpoint/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.theflawlesshack.breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
