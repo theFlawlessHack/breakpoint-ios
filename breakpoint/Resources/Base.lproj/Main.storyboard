@@ -84,16 +84,16 @@
             </objects>
             <point key="canvasLocation" x="2532" y="413"/>
         </scene>
-        <!--View Controller-->
+        <!--Auth Controller-->
         <scene sceneID="OQz-dn-8Fo">
             <objects>
-                <viewController id="wFo-SO-0aV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="authSB" id="wFo-SO-0aV" customClass="AuthController" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vug-Fa-nSJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBGImage" translatesAutoresizingMaskIntoConstraints="NO" id="ynB-A0-86U">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                <rect key="frame" x="0.0" y="333" width="375" height="334"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="334" id="fhg-W5-X7n"/>
                                 </constraints>
@@ -104,7 +104,7 @@
                                 <color key="textColor" red="0.4392156862745098" green="0.87058823529411766" blue="0.31258138020833331" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2X-jA-Lkw">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2X-jA-Lkw" customClass="ShadowView" customModule="breakpoint" customModuleProvider="target">
                                 <rect key="frame" x="35" y="153.5" width="305" height="360"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-cV-tU1">
@@ -129,6 +129,9 @@
                                                 <state key="normal" title="LOGIN WITH G+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signinWithGooglePressed:" destination="wFo-SO-0aV" eventType="touchUpInside" id="Ipw-Dt-27u"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulk-x4-9bF">
                                                 <rect key="frame" x="0.0" y="202" width="265" height="78"/>
@@ -147,9 +150,12 @@
                                         <state key="normal" title="  by email" image="emailIcon">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signinWithEmailPressed:" destination="wFo-SO-0aV" eventType="touchUpInside" id="6uP-0D-KGD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.2682239179" green="0.27087960030000002" blue="0.27087960030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="YgJ-cV-tU1" firstAttribute="leading" secondItem="p2X-jA-Lkw" secondAttribute="leading" constant="20" id="4OE-J0-Kha"/>
                                     <constraint firstItem="O00-1t-Xwh" firstAttribute="top" secondItem="YgJ-cV-tU1" secondAttribute="bottom" id="LRd-NE-Igl"/>
@@ -170,6 +176,7 @@
                             <constraint firstItem="IB2-3C-CAO" firstAttribute="leading" secondItem="E9A-g8-IP2" secondAttribute="leading" constant="45" id="6Dk-Wh-udR"/>
                             <constraint firstItem="ynB-A0-86U" firstAttribute="leading" secondItem="E9A-g8-IP2" secondAttribute="leading" id="U29-HG-xsm"/>
                             <constraint firstItem="p2X-jA-Lkw" firstAttribute="centerY" secondItem="Vug-Fa-nSJ" secondAttribute="centerY" id="UVF-jN-Uui"/>
+                            <constraint firstItem="E9A-g8-IP2" firstAttribute="bottom" secondItem="ynB-A0-86U" secondAttribute="bottom" id="XkP-Vg-Dz5"/>
                             <constraint firstItem="ynB-A0-86U" firstAttribute="top" secondItem="Vug-Fa-nSJ" secondAttribute="top" id="dqK-8H-Irk"/>
                             <constraint firstItem="p2X-jA-Lkw" firstAttribute="centerX" secondItem="Vug-Fa-nSJ" secondAttribute="centerX" id="mZy-mU-STP"/>
                             <constraint firstItem="IB2-3C-CAO" firstAttribute="top" secondItem="E9A-g8-IP2" secondAttribute="top" constant="30" id="nuO-Bp-n5W"/>
@@ -181,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="-802.39999999999998" y="-54.422788605697157"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="ypg-Kp-9hv">
             <objects>
-                <viewController id="7Op-p6-BeD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginSB" id="7Op-p6-BeD" customClass="LoginController" customModule="breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vvk-Bb-Yes">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,6 +203,9 @@
                                     <constraint firstAttribute="width" constant="30" id="yYO-a0-VtC"/>
                                 </constraints>
                                 <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="7Op-p6-BeD" eventType="touchUpInside" id="Z9Y-wn-aQd"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-ed-iyx">
                                 <rect key="frame" x="40" y="78" width="295" height="161"/>
@@ -206,24 +216,24 @@
                                         <color key="textColor" red="0.22881401909999999" green="0.7419433594" blue="0.64556206599999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkS-u6-ziN">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkS-u6-ziN" customClass="InsetTextField" customModule="breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="41" width="295" height="50"/>
                                         <color key="backgroundColor" red="0.26822391789837763" green="0.27087960025380708" blue="0.27087960025380708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="NMx-zl-2qN"/>
                                         </constraints>
                                         <color key="textColor" red="0.43921568630000002" green="0.87058823529999996" blue="0.31258138019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0N-jG-8RK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0N-jG-8RK" customClass="InsetTextField" customModule="breakpoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="111" width="295" height="50"/>
                                         <color key="backgroundColor" red="0.26822391789837763" green="0.27087960025380708" blue="0.27087960025380708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="I2U-4e-sGY"/>
                                         </constraints>
                                         <color key="textColor" red="0.43921568630000002" green="0.87058823529999996" blue="0.31258138019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
@@ -237,9 +247,12 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" red="0.22881401909999999" green="0.7419433594" blue="0.64556206599999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signPressed:" destination="7Op-p6-BeD" eventType="touchUpInside" id="ItR-ZK-T9M"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.2682239179" green="0.27087960030000002" blue="0.27087960030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pYn-ed-iyx" firstAttribute="leading" secondItem="suQ-n1-gBv" secondAttribute="leading" constant="40" id="2Cw-dK-cqe"/>
                             <constraint firstItem="pYn-ed-iyx" firstAttribute="top" secondItem="smt-2d-EK2" secondAttribute="bottom" constant="20" id="6hh-wy-yod"/>
@@ -251,6 +264,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="suQ-n1-gBv"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="kkS-u6-ziN" id="JgP-1k-UDd"/>
+                        <outlet property="passwordTextField" destination="e0N-jG-8RK" id="vEZ-Ck-oP5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STm-2v-Dl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

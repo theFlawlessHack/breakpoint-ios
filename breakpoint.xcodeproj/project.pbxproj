@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		300905440ABC482C1989CF22 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97688B84050C9541118C2CEA /* Pods_breakpoint.framework */; };
 		AC162492207933BF0051DBB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162491207933BF0051DBB3 /* Constants.swift */; };
+		AC162496207943650051DBB3 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162495207943650051DBB3 /* AuthController.swift */; };
+		AC162498207943BF0051DBB3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162497207943BF0051DBB3 /* LoginController.swift */; };
+		AC16249A207943FB0051DBB3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC162499207943FB0051DBB3 /* InsetTextField.swift */; };
+		AC16249C207948A70051DBB3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16249B207948A70051DBB3 /* ShadowView.swift */; };
+		AC16249E20794F990051DBB3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16249D20794F990051DBB3 /* AuthService.swift */; };
 		ACA8E70A20792E570067BC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E70920792E570067BC7C /* AppDelegate.swift */; };
 		ACA8E70C20792E570067BC7C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E70B20792E570067BC7C /* FirstViewController.swift */; };
 		ACA8E70E20792E570067BC7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8E70D20792E570067BC7C /* SecondViewController.swift */; };
@@ -22,6 +27,11 @@
 /* Begin PBXFileReference section */
 		97688B84050C9541118C2CEA /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC162491207933BF0051DBB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC162495207943650051DBB3 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		AC162497207943BF0051DBB3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		AC162499207943FB0051DBB3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		AC16249B207948A70051DBB3 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		AC16249D20794F990051DBB3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		ACA8E70620792E570067BC7C /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA8E70920792E570067BC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA8E70B20792E570067BC7C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +123,8 @@
 			children = (
 				ACA8E70B20792E570067BC7C /* FirstViewController.swift */,
 				ACA8E70D20792E570067BC7C /* SecondViewController.swift */,
+				AC162495207943650051DBB3 /* AuthController.swift */,
+				AC162497207943BF0051DBB3 /* LoginController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +132,8 @@
 		ACA8E71E20792EDA0067BC7C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC162499207943FB0051DBB3 /* InsetTextField.swift */,
+				AC16249B207948A70051DBB3 /* ShadowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA8E7272079330D0067BC7C /* DataService.swift */,
+				AC16249D20794F990051DBB3 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,11 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC16249C207948A70051DBB3 /* ShadowView.swift in Sources */,
 				AC162492207933BF0051DBB3 /* Constants.swift in Sources */,
+				AC162496207943650051DBB3 /* AuthController.swift in Sources */,
 				ACA8E70E20792E570067BC7C /* SecondViewController.swift in Sources */,
+				AC16249A207943FB0051DBB3 /* InsetTextField.swift in Sources */,
+				AC16249E20794F990051DBB3 /* AuthService.swift in Sources */,
 				ACA8E70A20792E570067BC7C /* AppDelegate.swift in Sources */,
 				ACA8E70C20792E570067BC7C /* FirstViewController.swift in Sources */,
 				ACA8E7282079330D0067BC7C /* DataService.swift in Sources */,
+				AC162498207943BF0051DBB3 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
