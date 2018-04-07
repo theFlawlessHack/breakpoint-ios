@@ -1,11 +1,7 @@
-//
-//  AppDelegate.swift
-//  breakpoint
-//
 //  Created by Jessica Joseph on 4/7/18.
 //  Copyright © 2018 TFH Inc. All rights reserved.
-//
 
+import Firebase
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
